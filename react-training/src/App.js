@@ -38,7 +38,7 @@ const card3 = {
   owner: "Firstname Lastname",
   bgColor: "#ddbb55",
   color: "white"
-}
+};
 
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
       <CreditCard {...card3} />
     </div>
   );
-}
+};
 
 
 
