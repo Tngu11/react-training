@@ -1,11 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Greetings from './Greetings';
-import Random from './Random';
-import BoxColor from './BoxColor';
-import CreditCard from './CreditCard';
-// import Rating from './Rating'
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Greetings from "./Greetings";
+import Random from "./Random";
+import BoxColor from "./BoxColor";
+import CreditCard from "./CreditCard";
+import Rating from "./Rating";
 
 const card1 = {
   type: "Visa",
@@ -40,7 +40,6 @@ const card3 = {
   color: "white"
 };
 
-
 function App() {
   return (
     <div className="App">
@@ -50,13 +49,16 @@ function App() {
       <Random min={1} max={100} />
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={80} g={255} b={0} />
-      <CreditCard {...card1} />
-      <CreditCard {...card2} />
-      <CreditCard {...card3} />
+      <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <CreditCard {...card1} />
+        <CreditCard {...card2} />
+        <CreditCard {...card3} />
+      </div>
+      <Rating children={3} />
+      <Rating children={1.3} />
+      <Rating children={4.5} />
     </div>
   );
-};
-
-
+}
 
 export default App;

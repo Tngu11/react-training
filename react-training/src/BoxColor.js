@@ -15,9 +15,6 @@ const BoxColor = props => {
       <p>{outputStr}</p>
       <p>{hex}</p> 
     </div>
-
-
-
   );
 };
 
